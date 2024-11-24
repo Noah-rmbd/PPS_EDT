@@ -50,7 +50,7 @@ class generate_calendar():
                           location, group)
 
             # Écrire le calendrier dans un fichier .ics
-            with open('et3_cal/' + str(groups[0]) + '.ics', 'wb') as f:
+            with open('et3_cal/' + str(groups[0]).replace(" ", "") + '.ics', 'wb') as f:
                 f.write(cal.to_ical())
 
             print("Calendrier créé avec succès et enregistré dans " + str(groups[0]) + ".ics'")
