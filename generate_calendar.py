@@ -55,6 +55,7 @@ class generate_calendar():
 
             print("Calendrier créé avec succès et enregistré dans " + str(groups[0]) + ".ics'")
 
+print("ok")
 
 with open("et3_classes.pkl", "rb") as file:
     dict_saved_classes = pickle.load(file)
